@@ -35,6 +35,7 @@ def employee_by_id(employee_id):
 def employees_all():
     result = mongo.db.employee.find()
 
+    print('ROWS:', result.count())
     if result.count() == 0:
         from database import init_db
         init_db()
