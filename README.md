@@ -1,7 +1,9 @@
-# Prerequisites
+# Requirements
 - git
+- python virtualenv
 - Python 3.6+
 - pip
+- various python modules (see requirements.txt after installing)
 - MongoDb Community Edition
 
 # First Time setup
