@@ -1,17 +1,6 @@
-/*
-    If you are using the sample RESTFul services I published on GitHub, use the following URLs...
-
-      - For the Node.js sample backend (available in https://github.com/ccoenraets/directory-rest-nodejs)
-        Use: http://localhost:3000/employees
-
-      - For the PHP sample backend (available in https://github.com/ccoenraets/directory-rest-php)
-        Use: /directory-rest-php/employees
-
- */
-
 directory.Employee = Backbone.Model.extend({
 
-    urlRoot:"http://directory.supported.systems:5000/directory/employees",
+    urlRoot:"/directory/employees",
 
     initialize:function () {
         this.reports = new directory.EmployeeCollection();
@@ -24,7 +13,7 @@ directory.EmployeeCollection = Backbone.Collection.extend({
 
     model: directory.Employee,
 
-    url:"http://directory.supported.systems:5000/directory/employees"
+    url:"/directory/employees"
 
 });
 
