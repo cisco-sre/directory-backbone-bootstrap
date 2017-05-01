@@ -1,7 +1,10 @@
-# Prerequisites
+# Requirements
 - git
+- python virtualenv
 - Python 3.6+
 - pip
+- various python modules (see requirements.txt after installing)
+- MongoDb Community Edition
 
 # First Time setup
 - Clone this repository (will fail if the destination directory exists)
@@ -11,7 +14,10 @@
 - Create virtualenv
   * python virtualenv venv --python=python3
 - Install requirements
-  * pip install -r requirements.txt
+  * pip install -r requirements.txt'
+- Make sure MongoDB is running on localhost
+  * https://docs.mongodb.com/manual/installation/#mongodb-community-edition
+  * The flask app will create a database (app) and collection (directory) the first time the API is accessed. See database.py for details
 
 # Launch
 - From a terminal window, change to the directory where the repository was checked out above
