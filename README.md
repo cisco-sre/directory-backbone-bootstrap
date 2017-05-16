@@ -4,7 +4,6 @@
 - Python 3.6+
 - pip
 - various python modules (see requirements.txt after installing)
-- MongoDb Community Edition
 
 # First Time setup
 - Clone this repository (will fail if the destination directory exists)
@@ -13,11 +12,14 @@
   * cd directory-backbone-bootstrap
 - Create virtualenv
   * python virtualenv venv --python=python3
+- Use new virtualenv
+  * Mac/Linux
+    - source venv/bin/activate
+  * Windows
+    - venv\Scripts\activate
+
 - Install requirements
-  * pip install -r requirements.txt'
-- Make sure MongoDB is running on localhost
-  * https://docs.mongodb.com/manual/installation/#mongodb-community-edition
-  * The flask app will create a database (app) and collection (directory) the first time the API is accessed. See database.py for details
+  * pip install -r requirements.txt
 
 # Launch
 - From a terminal window, change to the directory where the repository was checked out above
